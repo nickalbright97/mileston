@@ -4,128 +4,168 @@
 <head>
     <title>Houston Rockets Roster</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="resources/custom.css" />
+    <link rel="icon" href="resources/logos/rockets_196.png">
 </head>
 
 <body>
-    <img class="top_logo" src="resources/logos/rockets_logo_843.png" width="270" height="180" alt="Rockets logo">
-    <!-- Going to be top navigation bar w/ CSS https://www.w3schools.com/howto/howto_js_topnav.asp -->
-    <div class="topnav">
-        <a href="homepage.html#home">Home</a>
-        <a href="updates.html">Updates</a>
-        <a href="roster.html">Roster</a>
-        <a href="homepage.html#connect">Connect</a>
+    <div class="jumbotron text-center">
+        <img class="top_logo" src="resources/logos/rockets_logo_no_border.png" width="270" height="180"
+            alt="Rockets logo" style="border:5px #071A21">>
+    </div>
+    <div class="navbar white-border">
+        <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="homepage.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="updates.html">Updates <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="roster.html">Roster</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
 
     <section class="roster">
-        <h1>2019-20 Roster</h1>
-        <!-- Styling this with player_card-type divs. Will make it look like a grid w/ CSS-->
-        <div class="player_card">
-            <img src="resources/players/Westbrook.png" width="260" height="190" alt="Russell Westbrook">
-            <header class="player_header">
-                <h1 class="player_name">Russell Westbrook</h1>
-                <div class="player_number">0</div>
-                <div class="player_hyphen">-</div>
-                <div class="player_position">Guard</div>
-            </header>
-        </div>
-        <div class="player_card">
-            <img src="resources/players/House.png" width="260" height="190" alt="Danuel House">
-            <header class="player_header">
-                <h1 class="player_name">Danuel House</h1>
-                <div class="player_number">4</div>
-                <div class="player_hyphen">-</div>
-                <div class="player_position">Forward-Guard</div>
-            </header>
-        </div>
-        <div class="player_card">
-            <img src="resources/players/Clark.png" width="260" height="190" alt="Gary Clark">
-            <header class="player_header">
-                <h1 class="player_name">Gary Clark</h1>
-                <div class="player_number">6</div>
-                <div class="player_hyphen">-</div>
-                <div class="player_position">Forward</div>
-            </header>
-        </div>
-        <div class="player_card">
-            <img src="resources/players/Gordon.png" width="260" height="190" alt="Eric Gordon">
-            <header class="player_header">
-                <h1 class="player_name">Eric Gordon</h1>
-                <div class="player_number">10</div>
-                <div class="player_hyphen">-</div>
-                <div class="player_position">Guard</div>
-            </header>
-        </div>
-        <div class="player_card">
-            <img src="resources/players/Harden.png" width="260" height="190" alt="James Harden">
-            <header class="player_header">
-                <h1 class="player_name">James Harden</h1>
-                <div class="player_number">13</div>
-                <div class="player_hyphen">-</div>
-                <div class="player_position">Guard</div>
-            </header>
-        </div>
-        <div class="player_card">
-            <img src="resources/players/Capela.png" width="260" height="190" alt="Clint Capela">
-            <header class="player_header">
-                <h1 class="player_name">Clint Capela</h1>
-                <div class="player_number">15</div>
-                <div class="player_hyphen">-</div>
-                <div class="player_position">Center</div>
-            </header>
-        </div>
-        <div class="player_card">
-            <img src="resources/players/McLemore.png" width="260" height="190" alt="Ben McLemore">
-            <header class="player_header">
-                <h1 class="player_name">Ben McLemore</h1>
-                <div class="player_number">16</div>
-                <div class="player_hyphen">-</div>
-                <div class="player_position">Guard</div>
-            </header>
-        </div>
-        <div class="player_card">
-            <img src="resources/players/Tucker.png" width="260" height="190" alt="PJ Tucker">
-            <header class="player_header">
-                <h1 class="player_name">PJ Tucker</h1>
-                <div class="player_number">17</div>
-                <div class="player_hyphen">-</div>
-                <div class="player_position">Forward</div>
-            </header>
-        </div>
-        <div class="player_card">
-            <img src="resources/players/Chandler.png" width="260" height="190" alt="Tyson Chandler">
-            <header class="player_header">
-                <h1 class="player_name">Tyson Chandler</h1>
-                <div class="player_number">19</div>
-                <div class="player_hyphen">-</div>
-                <div class="player_position">Center</div>
-            </header>
-        </div>
-        <div class="player_card">
-            <img src="resources/players/Frazier.png" width="260" height="190" alt="Michael Frazier">
-            <header class="player_header">
-                <h1 class="player_name">Michael Frazier</h1>
-                <div class="player_number">21</div>
-                <div class="player_hyphen">-</div>
-                <div class="player_position">Guard</div>
-            </header>
-        </div>
-        <div class="player_card">
-            <img src="resources/players/Bennett.png" width="260" height="190" alt="Anthony Bennett">
-            <header class="player_header">
-                <h1 class="player_name">Anthony Bennett</h1>
-                <div class="player_number">30</div>
-                <div class="player_hyphen">-</div>
-                <div class="player_position">Forward</div>
-            </header>
-        </div>
-        <div class="player_card">
-            <img src="resources/players/Hartenstein.png" width="260" height="190" alt="Isaiah Hartenstein">
-            <header class="player_header">
-                <h1 class="player_name">Isaiah Hartenstein</h1>
-                <div class="player_number">55</div>
-                <div class="player_hyphen">-</div>
-                <div class="player_position">Forward-Center</div>
-            </header>
+        <h1 class = "roster-header">2019-20 Roster</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card" style="width: 15rem">
+                        <img src="resources/players/Westbrook.png" class="card-img-top" alt="Russell Westbrook">
+                        <div class="card-body">
+                            <h5 class="card-title">Russell Westbrook</h5>
+                            <p class="card-text">0 - Guard</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: 15rem">
+                        <img src="resources/players/House.png" class="card-img-top" alt="Danuel House">
+                        <div class="card-body">
+                            <h5 class="card-title">Danuel House</h5>
+                            <p class="card-text">4 - Forward/Guard</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: 15rem">
+                        <img src="resources/players/Clark.png" class="card-img-top" alt="Gary Clark">
+                        <div class="card-body">
+                            <h5 class="card-title">Gary Clark</h5>
+                            <p class="card-text">6 - Forward</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: 15rem">
+                        <img src="resources/players/Gordon.png" class="card-img-top" alt="Eric Gordon">
+                        <div class="card-body">
+                            <h5 class="card-title">Eric Gordon</h5>
+                            <p class="card-text">10 - Guard</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card" style="width: 15rem">
+                        <img src="resources/players/Harden.png" class="card-img-top" alt="James Harden">
+                        <div class="card-body">
+                            <h5 class="card-title">James Harden</h5>
+                            <p class="card-text">13 - MVP</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: 15rem">
+                        <img src="resources/players/Capela.png" class="card-img-top" alt="Clint Capela">
+                        <div class="card-body">
+                            <h5 class="card-title">Clint Capela</h5>
+                            <p class="card-text">15 - Center</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: 15rem">
+                        <img src="resources/players/McLemore.png" class="card-img-top" alt="Ben McLemore">
+                        <div class="card-body">
+                            <h5 class="card-title">Ben McLemore</h5>
+                            <p class="card-text">16 - Guard</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: 15rem">
+                        <img src="resources/players/Tucker.png" class="card-img-top" alt="PJ Tucker">
+                        <div class="card-body">
+                            <h5 class="card-title">PJ Tucker</h5>
+                            <p class="card-text">17 - Forward</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card" style="width: 15rem">
+                        <img src="resources/players/Chandler.png" class="card-img-top" alt="Tyson Chandler">
+                        <div class="card-body">
+                            <h5 class="card-title">Tyson Chandler</h5>
+                            <p class="card-text">19 - Center</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: 15rem">
+                        <img src="resources/players/Frazier.png" class="card-img-top" alt="Michael Frazier">
+                        <div class="card-body">
+                            <h5 class="card-title">Michael Frazier</h5>
+                            <p class="card-text">21 - Guard</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: 15rem">
+                        <img src="resources/players/Bennett.png" class="card-img-top" alt="Anthony Bennett">
+                        <div class="card-body">
+                            <h5 class="card-title">Anthony Bennett</h5>
+                            <p class="card-text">30 - Forward</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: 15rem">
+                        <img src="resources/players/Hartenstein.png" class="card-img-top" alt="Isaiah Hartenstein">
+                        <div class="card-body">
+                            <h5 class="card-title">Isaiah Hartenstein</h5>
+                            <p class="card-text">55 - Forward/Center</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>

@@ -4,56 +4,78 @@
 <head>
     <title>Houston Rockets Roster</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="resources/custom.css" />
+    <link rel="icon" href="resources/logos/rockets_196.png">
 </head>
 
 <body>
-    <img class="top_logo" src="resources/logos/rockets_logo_843.png" width="270" height="180" alt="Rockets logo">
-    <!-- Going to be top navigation bar w/ CSS https://www.w3schools.com/howto/howto_js_topnav.asp -->
-    <div class="topnav">
-        <a href="homepage.html#home">Home</a>
-        <a href="updates.html">Updates</a>
-        <a href="roster.html">Roster</a>
-        <a href="homepage.html#connect">Connect</a>
+    <div class="jumbotron text-center">
+        <img class="top_logo" src="resources/logos/rockets_logo_no_border.png" width="270" height="180"
+            alt="Rockets logo" style="border:5px #071A21">>
+    </div>
+    <div class="navbar white-border">
+        <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="homepage.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="updates.html">Updates <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="roster.html">Roster</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
 
-    <section class="record_card">
-        <h1 class="record_head">Current Record</h1>
-        <div class="wins">0</div>
-        <div class="record_hyphen">-</div>
-        <div class="losses">0</div>
-    </section>
-
-    <section class="games_section">
+    <section class="left-section white-border bottom-padding">
         <h1 class="games_head">Next Three Games</h1>
-        <div class="game_card">
-            <img class="team_logo" src="resources/logos/bucks.png" alt="Bucks logo">
-            <div class="team_name">Milwaukee Bucks</div>
-            <img class="team_logo" src="resources/logos/rockets.png" alt="Rockets logo">
-            <div class="team_name">Houston Rockets</div>
-            <div class="game_date">10/24</div>
-            <div class="game_time">8:00 PM EST</div>
-        </div>
+        <ul class="list-group list-group-horizontal">
+            <li class="list-group-item schedule">
+                <div class="game_card">
+                    <img class="team_logo" src="resources/logos/bucks.png" alt="Bucks logo">
+                    <div class="team_name">Milwaukee Bucks</div>
+                    <img class="team_logo" src="resources/logos/rockets.png" alt="Rockets logo">
+                    <div class="team_name">Houston Rockets</div>
+                    <div class="game_date">10/24</div>
+                    <div class="game_time">8:00 PM EST</div>
+                </div>
+            </li>
 
-        <div class="game_card">
-            <img class="team_logo" src="resources/logos/pelicans.png" alt="Pelicans logo">
-            <div class="team_name">New Orleans Pelicans</div>
-            <img class="team_logo" src="resources/logos/rockets.png" alt="Rockets logo">
-            <div class="team_name">Houston Rockets</div>
-            <div class="game_date">10/26</div>
-            <div class="game_time">8:00 PM EST</div>
-        </div>
+            <li class="list-group-item schedule">
+                <div class="game_card">
+                    <img class="team_logo" src="resources/logos/pelicans.png" alt="Pelicans logo">
+                    <div class="team_name">New Orleans Pelicans</div>
+                    <img class="team_logo" src="resources/logos/rockets.png" alt="Rockets logo">
+                    <div class="team_name">Houston Rockets</div>
+                    <div class="game_date">10/26</div>
+                    <div class="game_time">8:00 PM EST</div>
+                </div>
+            </li>
 
-        <div class="game_card">
-            <img class="team_logo" src="resources/logos/thunder.png" alt="Thunder logo">
-            <div class="team_name">Oklahoma City Thunder</div>
-            <img class="team_logo" src="resources/logos/rockets.png" alt="Rockets logo">
-            <div class="team_name">Houston Rockets</div>
-            <div class="game_date">10/28</div>
-            <div class="game_time">8:00 PM EST</div>
-        </div>
+            <li class="list-group-item schedule">
+                <div class="game_card">
+                    <img class="team_logo" src="resources/logos/thunder.png" alt="Thunder logo">
+                    <div class="team_name">Oklahoma City Thunder</div>
+                    <img class="team_logo" src="resources/logos/rockets.png" alt="Rockets logo">
+                    <div class="team_name">Houston Rockets</div>
+                    <div class="game_date">10/28</div>
+                    <div class="game_time">8:00 PM EST</div>
+                </div>
+            </li>
+        </ul>
     </section>
 
-    <section class="standings">
+    <section class="standings left-section white-border">
         <h1 class="standings_head">Western Conference Standings</h1>
         <table class="standings_table">
             <tbody>
@@ -106,7 +128,8 @@
                     <td class="standings_losses">0</td>
                 </tr>
                 <tr>
-                    <td><img class="standings_logo" src="resources/logos/timberwolves.png" alt="timberwolves logo"></td>
+                    <td><img class="standings_logo" src="resources/logos/timberwolves.png" alt="timberwolves logo">
+                    </td>
                     <td class="standings_name">Minnesota Timberwolves</td>
                     <td class="standings_wins">0</td>
                     <td class="standings_losses">0</td>
@@ -130,7 +153,8 @@
                     <td class="standings_losses">0</td>
                 </tr>
                 <tr>
-                    <td><img class="standings_logo" src="resources/logos/trailblazers.png" alt="trailblazers logo"></td>
+                    <td><img class="standings_logo" src="resources/logos/trailblazers.png" alt="trailblazers logo">
+                    </td>
                     <td class="standings_name">Portland Trailblazers</td>
                     <td class="standings_wins">0</td>
                     <td class="standings_losses">0</td>
@@ -155,5 +179,16 @@
                 </tr>
             </tbody>
         </table>
+
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>

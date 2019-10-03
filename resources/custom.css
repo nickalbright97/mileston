@@ -1,0 +1,102 @@
+.jumbotron {
+    background-color: #071A21;
+    max-height: 560px;
+    border-radius: 0px 0px 0px 0px;
+    margin: 0px;
+    padding: 10px;
+    color: #071A21;
+}
+
+body {
+    background-color: #071A21;
+    color: #CE123E;
+}
+
+.navbar {
+    background-color: #071A21;
+    background-image: none;
+    background-repeat: no-repeat;
+   }
+
+.borderless .list-group-item {
+    background-color: #071A21;
+}
+
+h1 {
+    color: #CE123E;
+    background-color: #071A21;
+}
+
+a {
+    color: #CE123E;
+    text-decoration: underline;
+}
+
+.white-border {
+    border-color: white;
+    border-top-style: solid;
+}
+
+.social-round {
+    border-radius: 14px 14px 14px 14px;
+}
+
+.connect {
+    padding-top: 25px;
+}
+
+
+.card {
+    text-align: center;
+    background-color: #071A21;
+    border-style: solid;
+    border-color: #CE123E;
+    border-width: 5px;
+    color: white;
+}
+
+.row {
+    padding-top: 20px;
+}
+
+.roster-header {
+    text-align: center;
+}
+
+.left-section {
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.schedule {
+    width: 15rem;
+    text-align: center;
+    color: white;
+    background-color: #071A21;
+    border-style: solid;
+    border-color: #CE123E;
+    border-width: 5px;
+}
+
+.standings_table {
+    text-align: center;
+    color: white;
+}
+
+.bottom-padding {
+    padding-bottom: 28px;
+}
+
+td {
+    border-style: solid;
+    border-color: #CE123E;
+    border-width: 2px;
+}
+
+.standings_wins {
+    width: 4rem;
+}
+
+.standings_losses {
+    width: 4rem;
+}

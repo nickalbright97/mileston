@@ -4,55 +4,96 @@
 <head>
         <title>Houston Rockets At A Glance</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+                crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="resources/custom.css" />
+        <link rel="icon" href="resources/logos/rockets_196.png">
 </head>
 
 <body>
-        <!-- Extend this border with https://www.w3schools.com/cssref/css3_pr_border-image.asp -->
-        <img class="top_logo" src="resources/logos/rockets_logo_843.png" width="270" height="180" alt="Rockets logo">
-        <!-- Going to be top navigation bar w/ CSS https://www.w3schools.com/howto/howto_js_topnav.asp -->
-        <div class="topnav">
-                <a href="#home">Home</a>
-                <a href="updates.html">Updates</a>
-                <a href="roster.html">Roster</a>
-                <a href="#connect">Connect</a>
+        <div class="jumbotron text-center">
+                <img class="top_logo" src="resources/logos/rockets_logo_no_border.png" width="270" height="180"
+                        alt="Rockets logo" style="border:5px #071A21">>
+        </div>
+        <div class="navbar white-border">
+                <nav class="navbar navbar-expand-lg">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarText">
+                                <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item active">
+                                                <a class="nav-link" href="#home">Home <span
+                                                                class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="updates.html">Updates</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="roster.html">Roster</a>
+                                        </li>
+                                </ul>
+                        </div>
+                </nav>
         </div>
 
-        <section class="media">
-                <h1 id="#home">Media Buzz</h1>
+        <div class="white-border">
+                <div class="left-section">
+                        <h1 class="home" id="#home">Media Buzz</h1>
+                        <ul class="list-group borderless">
+                                <li class="list-group-item">
+                                        <a href="https://bleacherreport.com/articles/2853984-james-hardens-next-act">James
+                                                Harden's
+                                                Next Act</a>
+                                </li>
+                                <li class="list-group-item">
+                                        <a
+                                                href="https://spacecityscoop.com/2019/09/18/houston-rockets-3-goals-danuel-house-2019-20-season/">
+                                                Three Goals for Danuel House in the 19-20 Season</a>
+                                </li>
+                                <li class="list-group-item">
+                                        <a
+                                                href="https://houseofhouston.com/2019/09/17/houston-rockets-rumors-james-harden-defensive-outlook-2019-20-season/">
+                                                Houston Rockets' New-Look Defense</a>
+                                </li>
+                                <li class="list-group-item">
+                                        <a
+                                                href="https://hoopshabit.com/2019/09/18/houston-rockets-gerald-green-most-unsung-reserve-nba/">
+                                                Is Gerald Green the Most Unsung Reserve in the NBA?</a>
+                                </li>
+                        </ul>
+                </div>
+        </div>
 
-                <!-- Will add image overlays for the links with CSS -->
-                <ul>
-                        <li><a href="https://bleacherreport.com/articles/2853984-james-hardens-next-act">James Harden's
-                                        Next Act</a>
-                        </li>
-                        <li><a href="https://spacecityscoop.com/2019/09/18/houston-rockets-3-goals-danuel-house-2019-20-season/">
-                                        Three Goals for Danuel House in the 19-20 Season</a>
-                        </li>
-                        <li><a href="https://houseofhouston.com/2019/09/17/houston-rockets-rumors-james-harden-defensive-outlook-2019-20-season/">
-                                        Houston Rockets' New-Look Defense</a>
-                        </li>
-                        <li><a href="https://hoopshabit.com/2019/09/18/houston-rockets-gerald-green-most-unsung-reserve-nba/">
-                                        Is Gerald Green the Most Unsung Reserve in the NBA?</a>
-                        </li>
-                </ul>
-        </section>
+        <div class="white-border">
+                <section class="connect left-section">
+                        <a href="https://www.facebook.com/houstonrockets" target="_blank" rel="noopener noreferrer"><img
+                                        class="social-round" src="resources/logos/facebook.png" width="50" height="50"
+                                        alt="Facebook"></a>
+                        <a href="https://twitter.com/houstonrockets" target="_blank" rel="noopener noreferrer"><img
+                                        class="social-round" src="resources/logos/twitter.png" width="50" height="50"
+                                        alt="Twitter"></a>
+                        <a href="https://www.instagram.com/houstonrockets/" target="_blank"
+                                rel="noopener noreferrer"><img class="social-round" src="resources/logos/instagram.jpg"
+                                        width="50" height="50" alt="Instagram"></a>
+                        <a href="https://www.youtube.com/channel/UCVD7l69MVGFq_wzQvbk9HbQ" target="_blank"
+                                rel="noopener noreferrer"><img class="social-round" src="resources/logos/youtube.png"
+                                        width="50" height="50" alt="Youtube"></a>
+                        <a href="https://www.linkedin.com/company/houston-rockets/" target="_blank"
+                                rel="noopener noreferrer"><img class="social-round" src="resources/logos/linkedin.png"
+                                        width="50" height="50" alt="LinkedIn"></a>
+                </section>
+        </div>
 
-        <section class="connect">
-                <h2 id="#connect">Connect</h2>
-
-                <a href="https://www.facebook.com/houstonrockets" target="_blank" rel="noopener noreferrer"><img
-                                src="resources/logos/facebook.png" width="50" height="50" alt="Facebook"></a>
-                <a href="https://twitter.com/houstonrockets" target="_blank" rel="noopener noreferrer"><img
-                                src="resources/logos/twitter.png" width="50" height="50" alt="Twitter"></a>
-                <a href="https://www.instagram.com/houstonrockets/" target="_blank" rel="noopener noreferrer"><img
-                                src="resources/logos/instagram.jpg" width="50" height="50" alt="Instagram"></a>
-                <a href="https://www.youtube.com/channel/UCVD7l69MVGFq_wzQvbk9HbQ" target="_blank"
-                        rel="noopener noreferrer"><img src="resources/logos/youtube.jpg" width="50" height="50"
-                                alt="Youtube"></a>
-                <a href="https://www.linkedin.com/company/houston-rockets/" target="_blank"
-                        rel="noopener noreferrer"><img src="resources/logos/linkedin.png" width="50" height="50"
-                                alt="LinkedIn"></a>
-        </section>
-
-
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
 </body>
